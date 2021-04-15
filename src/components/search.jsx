@@ -8,15 +8,19 @@ class Search extends Component {
     this.props.searchFunction(event.target.value);
   }
 
+  handleClick = (e) => {
+    console.log(e);
+    e.target.classList.toggle('clicked');
+  }
+
   render() {
     return (
-      <div className="form-search">
-        <input
-          type="text"
-          className="form-control form-search"
-          onChange={this.handleUpdate}
-        />
-      </div>
+      <input
+        type="text"
+        className="form-control form-search"
+        onClick={this.handleClick}
+        onChange={this.handleUpdate}
+      />
     );
   }
 }

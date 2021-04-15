@@ -13,12 +13,14 @@
     padding: 60px 60px 60px 120px;
     border: none;
     font-size: 2.6em;
-    box-shadow: none;
     &:focus {
       box-shadow: none;
     }
   }
 
+    .clicked {
+      border: 2px solid red;
+    }
   &:before {
     content: '\F002';
     position: absolute;
